@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/addGold"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/add_gold"
+            android:drawableLeft="@drawable/coils"
+            android:gravity="center|right"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/questionNo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/level_no_bg"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/gridView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#565656" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:listSelector="#00000000"
+        android:layoutAnimation="@anim/layout_animation"
+        android:numColumns="8" />
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input"
+        android:layout_below="@+id/titlebar" >
+
+        
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/share_btn"
+             />
+
+        <Button
+            android:id="@+id/clearOne"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@+id/share"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/clear_btn" />
+
+        <Button
+            android:id="@+id/prompt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/share"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/prompt" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+			<ImageView
+            	android:id="@+id/pictrue"
+        		android:layout_width="match_parent"
+        		android:layout_height="0dp"
+        		android:background="#ffffff"
+        		android:padding="5dp"
+        		android:scaleType="fitXY"
+        	/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
